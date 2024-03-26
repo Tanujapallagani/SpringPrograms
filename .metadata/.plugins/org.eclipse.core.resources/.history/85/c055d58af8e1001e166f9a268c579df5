@@ -1,0 +1,12 @@
+package com.sathya.spring;
+
+public class JavaCourseService implements CourseService{
+
+	@Override
+	public void courseInfo() {
+		System.out.println("Java Course Service ...");
+		
+	}
+	
+
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SPRING BOOT</title>
+</head>
+<body bgcolor="orage">
+	<h1>This  is the Spring Boot Application using Maven</h1>
+
+</body>
+</html>

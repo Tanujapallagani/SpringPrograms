@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="car" class="com.sathya.spring.Car">
+     <property name="fuleType" value="Petrol"/>
+     <property name="maxSpeed" value="100"/>
+</bean>
+
+<bean id="bus" class="com.sathya.spring.Bus">
+     <property name="busType" value="Volvo"/>
+     <property name="maxSpeed" value="150"/>
+</bean>
+
+<bean id="traveller" class="com.sathya.spring.Traveller">
+     <property name="name" value="Avii"/>
+     <property name="email" value="avi@gamil.com"/>
+     <property name="mobile" value="8500200327"/>
+     <property name="vehicle" value="bus"/>
+</bean>
+
+</beans>

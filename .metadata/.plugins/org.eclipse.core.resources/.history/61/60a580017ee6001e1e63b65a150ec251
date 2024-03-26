@@ -1,0 +1,5 @@
+package com.sathya.lambok;
+
+public class Employee {
+
+}

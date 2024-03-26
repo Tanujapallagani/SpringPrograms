@@ -1,0 +1,52 @@
+package com.sathya.spring;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
+@Component
+@ComponentScan("com.sathya.spring")
+public class Student {
+	
+	private EmailService emailService;
+	private JavaCourseService javacourseService;
+	
+	//generate the constructor
+	@Autowired
+	public Student(EmailService emailService, JavaCourseService javacourseService) {
+		
+		this.emailService = emailService;
+		this.javacourseService = javacourseService;
+	}
+
+
+
+	
+	
+	
+	
+	//generate the setters and getters
+	/*public EmailService getEmailService() {
+		return emailService;
+	}
+	public void setEmailService(EmailService emailService) {
+		this.emailService = emailService;
+	}
+	public JavaCourseService getJavacourseService() {
+		return javacourseService;
+	}
+	public void setJavacourseService(JavaCourseService javacourseService) {
+		this.javacourseService = javacourseService;
+	}*/
+	
+	
+	public void  details()
+	{
+		emailService.message();
+		javacourseService.courseInfo();
+		
+	}
+
+	
+
+}
